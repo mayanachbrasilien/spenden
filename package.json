@@ -1,0 +1,24 @@
+{
+  "name": "maya",
+  "version": "0.0.0",
+  "description": "",
+  "repository": "jneidel/maya",
+  "license": "MIT",
+  "author": {
+    "name": "Jonathan Neidel",
+    "email": "jneidel@outlook.com",
+    "url": "http://jneidel.com"
+  },
+  "scripts": {
+    "build": "webpack -w"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "latest",
+    "dotenv": "latest",
+    "setup-webpack": "latest"
+  },
+  "ava": {
+    "files": "test/*.test.js"
+  }
+}
