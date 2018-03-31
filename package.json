@@ -14,8 +14,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "ava": "latest",
-    "dotenv": "latest",
     "setup-webpack": "latest"
   },
   "ava": {
