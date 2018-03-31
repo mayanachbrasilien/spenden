@@ -1,17 +1,7 @@
 @import "_variables.scss";
 
-@mixin container {
-  box-shadow: 0 0 5px $white;
-  border-radius: 5px;
-  background: rgba( $white, .1 );
-
-  &:hover {
-    box-shadow: 0 0 8px $white;
-  }
-}
-
 @mixin header-links {
-  color: $white;
+  color: $black;
   padding-bottom: 2px;
   border-bottom: 2px solid transparent;
   transition: border 0.3s ease;
@@ -44,11 +34,25 @@
   .header-underline {
     max-width: 0;
     height: 3px;
-    background: $white;
+    background: $black;
     transition: max-width 0.2s ease-in-out;
 
     .header-link:hover + & { max-width: 100%; }
   }
+}
+
+.underline--magical {
+  background-image: linear-gradient(120deg, $green 0%, $blue 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  &:hover {
+    background-size: 100% 88%;
+  }
+  color: $white;
+  text-decoration: none;
+  border: none;
 }
 
 body {
@@ -84,7 +88,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  @include container;
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  background: rgba( $white, .85 );
+  box-shadow: 10px 0 20px $white;
+  color: $black;
 }
 header .header-link {
   @include header-links;
@@ -123,7 +132,8 @@ footer {
 
 #nav-left {
   margin-left: 15px;
-  margin-top: 15px;
+  margin-top: 12px;
+  color: $black;
 }
 
 #nav-right {
@@ -133,5 +143,13 @@ footer {
 }
 
 .link-wrapper {
-  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.intro {
+  max-width: 50vw;
+}
+
+main {
+  text-align: center;
 }
