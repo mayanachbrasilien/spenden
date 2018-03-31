@@ -67,16 +67,13 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__( 4 );
-__webpack_require__( 5 );
-__webpack_require__( 6 );
+__webpack_require__( 1 );
+__webpack_require__( 2 );
+__webpack_require__( 3 );
 
 
 /***/ }),
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */
+/* 1 */
 /***/ (function(module, exports) {
 
 const lis = [ ...document.getElementsByTagName( "header" )[0].getElementsByTagName( "li" ) ];
@@ -84,15 +81,26 @@ const checkbox = document.getElementById( "responsive-menu" );
 
 lis.forEach( li => li.addEventListener( "click", () => checkbox.checked = false ) );
 
+const mission = [ ...document.getElementsByClassName( "mission-link" ) ];
+const me = [ ...document.getElementsByClassName( "me-link" ) ];
+const orga = [ ...document.getElementsByClassName( "orga-link" ) ];
+const support = [ ...document.getElementsByClassName( "support-link" ) ];
+
+[ ...mission, ...me, ...orga, ...support ].map( x => x.addEventListener( "click", () => {
+  setTimeout( () => {
+    window.scroll( 0, window.scrollY - 120 );
+  }, 10 );
+} ) );
+
 
 /***/ }),
-/* 5 */
+/* 2 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 6 */
+/* 3 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

@@ -1,20 +1,23 @@
+# maya-website
 
-- cmd öffen
+[Latest live version](divergent-love.surge.sh)
+
+## Project bauen
+
+- `cmd` öffnen
 - `cd Desktop\website`
 - `npm run build`
 
-Zum öffnen:
+## Project öffnen
 
-- Auf dem desktop website öffen
-- dist Ordner öffnen
-- main.html öffnen
+- Auf dem Desktop den Ordner `website` öffnen
+- `index.html` im Browser öffnen
 
-Zum bearbeiten der Dateien
+## Bearbeiten der Dateien
 
-- Notepad/Editor öffnen
-- Datei öffnen -> Desktop/website/src
-- Dropdown: anzeigen alle Dateien
-- Zum bearbeiten des HTML code: main.pug
-- Zum bearbeiten der Styles: main.scss
+- `VSCode` öffnen
+- Ordner öffnen: `website`
+- Zum bearbeiten des HTML code: index.pug
+- Zum bearbeiten der Styles: style.scss
 - Speichern mit Strg+S
 - Browser neuladen mit F5

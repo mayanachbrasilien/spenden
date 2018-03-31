@@ -1,0 +1,69 @@
+
+- const facebookLink = "#";
+- const emailAdress = "x@";
+
+head
+  title Maya
+  link( rel="icon" href="" )
+  link( rel="stylesheet" type="text/css" href="./style.css" )
+  link( href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet" )
+body
+  header
+    .container
+      input( id="responsive-menu" type="checkbox" )
+      label( for="responsive-menu" ) #MitMayaNachBrasilien <span id="menu-icon"></span>
+      #overlay
+      ul
+        li
+          a.header-link.mission-link( href="#mission" ) Meine Mission
+        li
+          a.header-link#me-link( href="#me" ) Über Mich
+        li
+          a.header-link#orga-link( href="#organization" ) Organisation
+        li
+          a.header-link#support-link( href="#support" ) Unterstütze Mich
+        li( style="display:flex;justify-content:center;align-items:center;flex-direction:column;")
+          hr.footer-hr( style="filter: invert(100%); margin-top: 10px;" )
+        li
+          a.footer-link( href=facebookLink ) Facebook
+        li
+          a.footer-link( href=`mailto:${emailAdress}` target="blank" ) Send Email
+  main
+    p Dies ist eine kurze Beschreibung des Projektes.<br>Pellentesque vel dui sed orci faucibus iaculis. Pellentesque vel dui sed orci faucibus iaculis.
+    .buttons
+      a.mission-link( href="#mission" ).button--get-started
+        img( src="img/book.svg" )
+        p Weiterlesen
+      a( href="#support" ).button--get-started
+        img( src="img/piggy-bank.svg" ) 
+        p Spenden
+    hr.footer-hr( style="margin: 40px 0;" )
+    div
+      h2#mission Meine Mission
+      p Pellentesque vel dui sed orci faucibus iaculis. <a class="underline" href="">Suspendisse dictum magna id purus tincidunt rutrum.</a> Nulla congue. Vivamus sit amet lorem posuere dui vulputate ornare. Phasellus mattis sollicitudin ligula.
+      img( src="https://lorempixel.com/800/400/abstract" style="width: 80wv;") 
+      p Duis dignissim felis et urna. Integer adipiscing congue metus. Nam pede. Etiam non wisi. Sed accumsan dolor ac augue. Pellentes. Mauris elementum, pede at sodales vestibulum, nulla tortor congue massa, quis pellentesque odio dui id est. Cras faucibus augue. Pellentesque vel dui sed orci faucibus iaculis. <a class="underline" href="">Suspendisse dictum</a> magna id purus <span id="me-anchor"></span>
+    div
+      h2#me Über Mich
+      p Pellentesque vel dui sed orci faucibus iaculis. Suspendisse dictum magna id purus tincidunt rutrum. Nulla congue. Vivamus sit amet lorem posuere dui vulputate ornare. Phasellus mattis sollicitudin ligula. Duis dignissim felis et urna. Integer adipiscing congue metus. Nam pede. Etiam non wisi. Sed accumsan dolor ac augue. Pellentesque eget lectus. Aliquam nec dolor nec tellus ornare venenatis. Nullam blandit placerat sem. Curabitur quis ipsum. Mauris nisl tellus, aliquet 
+    div
+      h2#organization Organisation
+      p Pellentesque vel dui sed orci faucibus iaculis. Suspendisse dictum magna id purus tincidunt rutrum. Nulla congue. <a class="underline" href="">Vivamus</a> sit amet lorem posuere dui vulputate ornare. Phasellus mattis sollicitudin ligula. Duis dignissim felis et urna. Integer adipiscing congue metus. Nam pede. Etiam non wisi. Sed accumsan dolor ac augue. Pellentesque eget lectus. Aliquam 
+    div
+      h2#support Unterstütze Mich
+      p Pellentesque vel dui sed orci faucibus iaculis. Suspendisse dictum magna id purus tincidunt rutrum. Nulla congue. Vivamus sit amet lorem posuere dui vulputate ornare. Phasellus mattis sollicitudin ligula. Duis dignissim felis et urna. Integer adipiscing congue metus. Nam pede. Etiam non wisi. Sed accumsan dolor ac augue.
+  footer
+    hr.footer-hr
+    .links
+      a.footer-link( href=facebookLink ) Facebook
+      a.footer-link( href=`mailto:${emailAdress}` target="blank" ) Send Email
+
+  script( src="./script.js" )
+
+  style.
+    html {
+      box-sizing: border-box;
+    }
+    *:not( img ), *:before, *:after {
+      box-sizing: inherit;
+    }

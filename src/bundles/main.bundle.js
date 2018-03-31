@@ -1,3 +1,3 @@
-require( "../main" );
-require( "../main.scss" );
-require( "../main.pug" );
+require( "../script" );
+require( "../style.scss" );
+require( "../index.pug" );

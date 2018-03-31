@@ -1,14 +1,14 @@
 const path = require( "path" );
 const { genScss, genPug } = require( "setup-webpack" );
 
-const scss = genScss( `./main.css` );
-const pug = genPug( `./main.html` );
+const scss = genScss( `./style.css` );
+const pug = genPug( `./index.html` );
 
 module.exports = {
   entry : `./src/bundles/main.bundle.js`,
   output: {
-    path    : path.resolve( __dirname, "dist" ),
-    filename: `main.js`,
+    path    : __dirname,
+    filename: `script.js`,
   },
   module: {
     loaders: [ scss.loader, pug.loader ],

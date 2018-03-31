@@ -1,0 +1,101 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_nav.scss";
+
+html {
+  font-size: $fontSize-standard;
+}
+
+$header-height: 100px;
+body {
+  display: grid;
+  grid-template-columns: 6vw auto 6vw;
+  grid-template-rows: $header-height 1fr 100px;
+  grid-template-areas: 
+    "header header header"
+    ". main ."
+    ". footer .";
+  background-image: linear-gradient( 45deg, $yellow, $red );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+	font-family: $font-text;
+  color: $white;
+  margin: 0;
+}
+
+main {
+  grid-area: main;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+header {
+  grid-area: header;
+  width: 100vw;
+  height: $header-height;
+  color: $black;
+}
+header .header-link {
+  @include header-links;
+}
+
+@include header-underlines;
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .links {
+    height: $height-footer - 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+      margin: 0;
+      border-bottom: 1px transparent solid;
+      margin: 0 5px;
+    }
+  }
+  .footer-link {
+    @include linkUnderline;
+  }
+}
+
+.footer-hr {
+  @include hr( 80vw );
+  margin: 0;
+}
+
+#nav-left {
+  margin-left: 15px;
+  margin-top: 12px;
+  color: $black;
+}
+
+#nav-right {
+  display: flex;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.link-wrapper {
+  padding-right: 15px;
+}
+
+.intro {
+  max-width: 50vw;
+}
+
+main {
+  text-align: center;
+}
