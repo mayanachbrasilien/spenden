@@ -1,6 +1,6 @@
 # maya-website
 
-[Latest live version](divergent-love.surge.sh)
+[Latest live version](https://divergent-love.surge.sh/)
 
 ## Project bauen
 
@@ -21,3 +21,25 @@
 - Zum bearbeiten der Styles: style.scss
 - Speichern mit Strg+S
 - Browser neuladen mit F5
+
+## Änderungen hochladen
+
+Im Ordner `Desktop/website`:
+
+- git add *
+- git commit -m"Beschreibung der Änderung"
+- git push origin master
+
+## Site Hosting
+
+**Github:**
+
+Schema: `www.github.io/<username>/<title>`
+
+Example: `www.github.io/maya00/website`
+
+**Surge:**
+
+Schema: `www.<title>.surge.sh`
+
+Example: `www.maya-website.surge.sh`
