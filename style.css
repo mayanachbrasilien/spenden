@@ -152,7 +152,7 @@ body {
   display: grid;
   grid-template-columns: 6vw auto 6vw;
   grid-template-rows: 100px 1fr 100px;
-  grid-template-areas: "header header header" ". main ." ". footer .";
+  grid-template-areas: "header header header" ". main ." ". footer .";
   background-image: linear-gradient(45deg, #FFC93C, #FC3A52);
   background-size: cover;
   background-repeat: no-repeat;
