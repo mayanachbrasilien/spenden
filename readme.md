@@ -26,9 +26,11 @@
 
 Im Ordner `Desktop/website`:
 
-- git add *
-- git commit -m"Beschreibung der Änderung"
-- git push origin master
+- Öffnen der Console `Strg - j`
+- Beenden des Build prozesses mit `Strg - c`
+- `git add *`
+- `git commit -m"Beschreibung der Änderung"`
+- `git push origin master`
 
 ## Site Hosting
 

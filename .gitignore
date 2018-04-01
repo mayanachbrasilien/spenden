@@ -1,6 +1,4 @@
 node_modules/
 package-lock.json
-index.html
-script.js
-style.css
 dist
+todo.md
