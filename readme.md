@@ -1,6 +1,6 @@
 # maya-website
 
-[Latest live version](https://divergent-love.surge.sh/)
+[Latest live version](https://mayanachbrasilien.github.io/spenden/index.html)
 
 ## Project bauen
 
