@@ -38,7 +38,7 @@
     margin-right: 25px; }
 
 header {
-  background-image: linear-gradient(45deg, #00E0FF, #3BECAB 90%);
+  background-image: linear-gradient(45deg, #ffbb00, #EBD117 90%);
   color: #1d1f20;
   left: 0;
   position: fixed;
@@ -152,8 +152,8 @@ body {
   display: grid;
   grid-template-columns: 6vw auto 6vw;
   grid-template-rows: 100px 1fr 100px;
-  grid-template-areas: "header header header" ". main ." ". footer .";
-  background-image: linear-gradient(45deg, #FFC93C, #FC3A52);
+  grid-template-areas: "header header header" ". main ." ". footer .";
+  background-image: linear-gradient(45deg, #0710B2, darkgreen);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

@@ -2,8 +2,8 @@
 $white: #F5F7FA;
 $black: #333;
 $green: #3BECAB;
-$blue: #15B7E4;
-$yellow: #FFC93C;
+$blue: #0710B2;
+$yellow: #EBD117;
 $red: #FC3A52;
 
 $font-headline: "Raleway", "Open Sans", Arial;
@@ -19,11 +19,12 @@ $height-header: 60px;
 $height-footer: 60px;
 
 // Applied colors
-$gradient-top: $red;
-$gradient-bot: $yellow;
+$gradient-top: darkgreen;
+$gradient-bot: $blue;
 
 $fontColor-main: $white;
 $fontColor-reverse: $black;
 
-$header-right: $green;
-$header-left: #00E0FF;
+$header-right: $yellow;
+$header-left: rgb(255, 187, 0)
+
