@@ -1,6 +1,6 @@
 // Source: https://codepen.io/erinesullivan/pen/VQjzmZ?editors=1100
 header {
-  background-image: linear-gradient( 45deg, #00E0FF, $green 90% );
+  background-image: linear-gradient( 45deg, $header-left, $header-right 90% );
   color: #1d1f20;
   left: 0;
   position: fixed;

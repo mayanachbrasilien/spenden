@@ -1,5 +1,5 @@
 @mixin header-links {
-  color: $black;
+  color: $fontColor-reverse;
   padding-bottom: 2px;
   border-bottom: 2px solid transparent;
   transition: border 0.3s ease;
@@ -8,13 +8,13 @@
 }
 
 @mixin linkUnderline {
-  border-bottom: 1px $white solid;
+  border-bottom: 1px $fontColor-reverse solid;
 
-  color: $white;
+  color: $fontColor-main;
   text-decoration: none;
 
   &:hover {
-    color: $black;
+    color: $fontColor-reverse;
     border-bottom-color: transparent;
   }
 }
@@ -32,7 +32,7 @@
   .header-underline {
     max-width: 0;
     height: 3px;
-    background: $black;
+    background: $fontColor-reverse;
     transition: max-width 0.2s ease-in-out;
 
     .header-link:hover + & { max-width: 100%; }
@@ -41,11 +41,11 @@
 
 .underline {
   &:hover {
-    color: $black;
+    color: $fontColor-reverse;
   }
-  color: $white;
+  color: $fontColor-main;
   text-decoration: none;
-  border-bottom: 2px $black solid;
+  border-bottom: 2px $fontColor-reverse solid;
 }
 
 .buttons {

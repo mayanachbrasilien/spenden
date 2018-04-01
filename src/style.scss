@@ -15,13 +15,13 @@ body {
     "header header header"
     ". main ."
     ". footer .";
-  background-image: linear-gradient( 45deg, $yellow, $red );
+  background-image: linear-gradient( 45deg, $gradient-bot, $gradient-top );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 100vh;
 	font-family: $font-text;
-  color: $white;
+  color: $fontColor-main;
   margin: 0;
 }
 
@@ -39,7 +39,7 @@ header {
   grid-area: header;
   width: 100vw;
   height: $header-height;
-  color: $black;
+  color: $fontColor-reverse;
 }
 header .header-link {
   @include header-links;
@@ -79,7 +79,7 @@ footer {
 #nav-left {
   margin-left: 15px;
   margin-top: 12px;
-  color: $black;
+  color: $fontColor-reverse;
 }
 
 #nav-right {
