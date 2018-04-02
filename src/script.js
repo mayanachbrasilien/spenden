@@ -10,6 +10,6 @@ const support = [ ...document.getElementsByClassName( "support-link" ) ];
 
 [ ...mission, ...me, ...orga, ...support ].map( x => x.addEventListener( "click", () => {
   setTimeout( () => {
-    window.scroll( 0, window.scrollY - 120 );
+    window.scroll( 0, window.scrollY - 125 );
   }, 10 );
 } ) );
