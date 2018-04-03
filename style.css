@@ -1,9 +1,10 @@
 .underline {
   color: #F5F7FA;
   text-decoration: none;
-  border-bottom: 2px #333 solid; }
+  border-bottom: 2px #F5F7FA solid; }
   .underline:hover {
-    color: #333; }
+    color: #333;
+    background: #F5F7FA; }
 
 .buttons {
   display: flex;
@@ -206,15 +207,7 @@ footer {
     align-items: center; }
     footer .links > * {
       margin: 0;
-      border-bottom: 1px transparent solid;
       margin: 0 5px; }
-  footer .footer-link {
-    border-bottom: 1px #333 solid;
-    color: #F5F7FA;
-    text-decoration: none; }
-    footer .footer-link:hover {
-      color: #333;
-      border-bottom-color: transparent; }
 
 .footer-hr {
   width: 80vw;

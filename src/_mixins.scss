@@ -42,10 +42,11 @@
 .underline {
   &:hover {
     color: $fontColor-reverse;
+    background: $fontColor-main;
   }
   color: $fontColor-main;
   text-decoration: none;
-  border-bottom: 2px $fontColor-reverse solid;
+  border-bottom: 2px $fontColor-main solid;
 }
 
 .buttons {

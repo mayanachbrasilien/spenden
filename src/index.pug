@@ -25,9 +25,9 @@ body
         li( style="display:flex;justify-content:center;align-items:center;flex-direction:column;")
           hr.footer-hr( style="filter: invert(100%); margin-top: 10px;" )
         li
-          a.footer-link( href=facebookLink ) Facebook
+          a.header-link( href=facebookLink ) Facebook
         li
-          a.footer-link( href=`mailto:${emailAdress}` target="blank" ) Send Email
+          a.header-link( href=`mailto:${emailAdress}` target="blank" ) Send Email
   main
     p Dies ist eine kurze Beschreibung des Projektes.<br>Pellentesque vel dui sed orci faucibus iaculis. Pellentesque vel dui sed orci faucibus iaculis.
     .buttons
@@ -94,8 +94,8 @@ body
   footer
     hr.footer-hr
     .links
-      a.footer-link( href=facebookLink ) Facebook
-      a.footer-link( href=`mailto:${emailAdress}` target="blank" ) Send Email
+      a.underline( href=facebookLink ) Facebook
+      a.underline( href=`mailto:${emailAdress}` target="blank" ) Send Email
 
   script( src="./script.js" )
 
