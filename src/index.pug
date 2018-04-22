@@ -25,9 +25,9 @@ body
         li( style="display:flex;justify-content:center;align-items:center;flex-direction:column;")
           hr.footer-hr( style="filter: invert(100%); margin-top: 10px;" )
         li
-          a.header-link( href=facebookLink ) Facebook
+          a.header-link( href=`mailto:${emailAdress}` target="blank" ) Email
         li
-          a.header-link( href=`mailto:${emailAdress}` target="blank" ) Send Email
+          a.header-link( href=facebookLink ) Facebook
   main
     p Dies ist eine kurze Beschreibung des Projektes.<br>Pellentesque vel dui sed orci faucibus iaculis. Pellentesque vel dui sed orci faucibus iaculis.
     .buttons
@@ -81,7 +81,7 @@ body
         | Freiwillige die Möglichkeit haben auf diese Weise ins Ausland zu gehen. Das Konzept basiert also auf dem Solidaritätsprinzip 
         | und auf dem Gleichheitsgedanken. So hängen die Freiwilligendienste nicht von den entstehenden Kosten der einzelnen Projekte 
         | oder von der finanziellen Lage der Freiwilligen und ihrer Eltern ab.
-      p Darum bitte ich um Unterstützung in Form von Spenden
+      p Darum bitte ich um Unterstützung in Form von Spenden:
       code 
         | IBAN: DE53 1405 1000 1506 0524 59<br>
         | BIC: NOLADE21WIS <br>
@@ -92,10 +92,12 @@ body
       p Die Freunde sind als gemeinnütziger Verein staatlich anerkannt, weshalb sie als Spender*innen steuerlich wirksame 
         | Spendenbescheinigungen erhalten können.
   footer
-    hr.footer-hr
-    .links
-      a.underline( href=facebookLink ) Facebook
-      a.underline( href=`mailto:${emailAdress}` target="blank" ) Send Email
+    div
+      hr.footer-hr
+      .links
+        a.underline( href=`mailto:${emailAdress}` target="blank" ) Email
+        a.underline( href=facebookLink ) Facebook
+    p( style="margin-top: 5px; font-size: 0.7rem; padding-bottom: 15px;") Website umgesetzt durch <a href="https://jneidel.com" class="underline" target="_blank">Jonathan Neidel</a>.
 
   script( src="./script.js" )
 
