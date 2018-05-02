@@ -1,6 +1,6 @@
-@import "_variables.scss";
-@import "_mixins.scss";
-@import "_nav.scss";
+@import "mixins/_variables.scss";
+@import "mixins/_mixins.scss";
+@import "mixins/_nav.scss";
 
 html {
   font-size: $fontSize-standard;
@@ -94,4 +94,10 @@ footer {
 
 main {
   text-align: center;
+}
+
+#builtby {
+  margin-top: 5px;
+  font-size: 0.7rem;
+  padding-bottom: 15px;
 }

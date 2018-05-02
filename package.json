@@ -10,7 +10,8 @@
     "url": "http://jneidel.com"
   },
   "scripts": {
-    "build": "webpack -w"
+    "build": "webpack -w",
+    "webpack": "webpack"
   },
   "dependencies": {},
   "devDependencies": {

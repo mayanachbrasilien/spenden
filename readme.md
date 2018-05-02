@@ -1,6 +1,6 @@
 # mayanachbrasilien/spenden
 
-[Link zur Online Version](https://mayanachbrasilien.github.io/spenden/index.html)
+[Link zur Online Version](https://mayanachbrasilien.github.io/spenden/de.html)
 
 ## Bearbeiten der Website
 
@@ -10,9 +10,13 @@
 - Console mit `Strg + j` öffnen
 - Aktuellen Stand herunterladen mit `git pull origin master` ❌ WICHTIG
 - Projekt bauen mit `npm run build`
-- Nun die lokale Version der Website öffnen: `Dektop/website/index.html`
+- Nun die lokale Version der Website unter folgendem Pfad öffnen: `Dektop/website/de.html`
 - Speichern mit `Strg + S`
 - Browser neuladen mit F5
+
+## Texte
+
+Die Texte befinden sich in den Dateien `_de.pug` und `_en.pug` im Ordner `src/mixins`.
 
 ## Änderungen hochladen
 

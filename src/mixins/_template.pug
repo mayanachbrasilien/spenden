@@ -1,0 +1,33 @@
+mixin titleLabelTmp( title )
+  label( for="responsive-menu" style="display: flex; justify-content: space-between;" )
+    span( style="display:flex;align-text: center;" )= title
+      img( src="img/brazil.svg" height="80" style="padding-left: 10px; margin-top: -12px;")
+    span#menu-icon
+
+mixin tableOfContentsTmp( mission, me, orga, support, viewinLink, viewinText )
+  ul
+    li
+      a.header-link.mission-link( href="#mission" )=mission
+    li
+      a.header-link.me-link( href="#me" )=me
+    li
+      a.header-link.orga-link( href="#organization" )=orga
+    li
+      a.header-link.support-link( href="#support" )=support
+    li( style="display:flex;justify-content:center;align-items:center;flex-direction:column;")
+      hr.footer-hr( style="filter: invert(100%); margin-top: 10px;" )
+    li
+      a.header-link( href=viewinLink )=viewinText
+    li( style="display:flex;justify-content:center;align-items:center;flex-direction:column;")
+      hr.footer-hr( style="filter: invert(100%); margin-top: 10px;" )
+    li
+      a.header-link( href=`mailto:${emailAdress}` target="blank" ) Email
+    li
+      a.header-link( href=facebookLink ) Facebook
+
+mixin bankverbindung()
+  code 
+    | IBAN: DE53 1405 1000 1506 0524 59<br>
+    | BIC: NOLADE21WIS <br>
+    | Kontoinhaber: Maya Dettmann <br>
+    | Verwendungszweck: Spende Brasilien

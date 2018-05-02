@@ -1,3 +1,3 @@
 require( "../script" );
 require( "../style.scss" );
-require( "../index.pug" );
+require( "../en.pug" );

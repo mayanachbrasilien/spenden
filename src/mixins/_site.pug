@@ -1,0 +1,60 @@
+- const facebookLink = "https://www.facebook.com/maya.dettmann";
+- const emailAdress = "dettmann_maya@yahoo.de";
+
+mixin site( language = "DE" )
+  if ( language === "DE" )
+    include _de
+  else
+    include _en
+  
+  head
+    +title()
+    link( rel="icon" href="img/brazil.png" )
+    link( rel="stylesheet" type="text/css" href="./style.css" )
+    link( href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet" )
+  body
+    header
+      .container
+        input( id="responsive-menu" type="checkbox" )
+        +titleLabel()
+        #overlay
+        +tableOfContents()
+    main
+      +description()
+      .buttons
+        a.mission-link( href="#mission" ).button--get-started
+          img( src="img/book.svg" )
+          +buttonRead()
+        a.support-link( href="#support" ).button--get-started
+          img( src="img/piggy-bank.svg" ) 
+          +buttonSupport()
+      hr.footer-hr( style="margin: 40px 0;" )
+      div
+        +h2mission()
+        +mission()
+      div
+        +h2me()
+        +me()
+      div
+        +h2orga()
+        +orga()
+      div
+        +h2support()
+        +support()        
+    footer
+      div
+        hr.footer-hr
+        .links
+          a.underline( href=`mailto:${emailAdress}` target="blank" ) Email
+          a.underline( href=facebookLink ) Facebook
+      +builtby()
+
+    script( src="./script.js" )
+
+    style.
+      html {
+        box-sizing: border-box;
+      }
+      *:not( img ), *:before, *:after {
+        box-sizing: inherit;
+      }
