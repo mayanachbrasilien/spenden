@@ -2,10 +2,7 @@
 - const emailAdress = "dettmann_maya@yahoo.de";
 
 mixin site( language = "DE" )
-  if ( language === "DE" )
-    include _de
-  else
-    include _en
+  include _de
   
   head
     +title()

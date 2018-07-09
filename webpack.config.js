@@ -3,7 +3,7 @@ const { genScss, genPug } = require( "setup-webpack" );
 
 const config = [];
 
-[ "de", "en" ].forEach( name => {
+[ "index" ].forEach( name => {
   const scss = genScss( `./style.css` );
   const pug = genPug( `./${name}.html` );
 

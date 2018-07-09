@@ -9,6 +9,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "setup-webpack": "latest"
+    "setup-webpack": "1.x"
   }
 }

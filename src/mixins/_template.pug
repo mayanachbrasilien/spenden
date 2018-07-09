@@ -4,7 +4,7 @@ mixin titleLabelTmp( title )
       img( src="img/brazil.svg" height="80" style="padding-left: 10px; margin-top: -12px;")
     span#menu-icon
 
-mixin tableOfContentsTmp( mission, me, orga, support, viewinLink, viewinText )
+mixin tableOfContentsTmp( mission, me, orga, support )
   ul
     li
       a.header-link.mission-link( href="#mission" )=mission
@@ -14,10 +14,6 @@ mixin tableOfContentsTmp( mission, me, orga, support, viewinLink, viewinText )
       a.header-link.orga-link( href="#organization" )=orga
     li
       a.header-link.support-link( href="#support" )=support
-    li( style="display:flex;justify-content:center;align-items:center;flex-direction:column;")
-      hr.footer-hr( style="filter: invert(100%); margin-top: 10px;" )
-    li
-      a.header-link( href=viewinLink )=viewinText
     li( style="display:flex;justify-content:center;align-items:center;flex-direction:column;")
       hr.footer-hr( style="filter: invert(100%); margin-top: 10px;" )
     li
