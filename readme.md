@@ -1,6 +1,6 @@
 # mayanachbrasilien/spenden
 
-[Link zur Online Version](https://mayanachbrasilien.github.io/spenden/de.html)
+[Link zur Online Version](https://mayanachbrasilien.github.io/spenden)
 
 ## Bearbeiten der Website
 
